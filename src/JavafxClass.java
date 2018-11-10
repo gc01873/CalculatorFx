@@ -19,14 +19,8 @@ public class JavafxClass extends Application { //implements EventHandler<ActionE
 		primaryStage.setTitle("Title of the Window");
 		button = new Button();
 		button.setText("Click Me");
-		button.setOnAction(new EventHandler<ActionEvent>() {
-
-			@Override
-			public void handle(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-				System.out.println("I am an anonymous inner class");
-			}
-			
+		button.setOnAction(e -> {System.out.println("Hey Baby :)");
+			System.out.println("Hey Baby? :')");
 		});
 		StackPane layout = new StackPane();
 		layout.getChildren().add(button);
